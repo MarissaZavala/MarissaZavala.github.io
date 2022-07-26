@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Validar Tarjeta de Credito</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+   
+  </head>
+  <body>
+    <div>
+    <header></header>
+    <form id="addCard" class="addCard">
+      <h2> <stronger>TERMINA TU COMPRA</stroger> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="52" height="52" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <circle cx="6" cy="19" r="2" />
+  <circle cx="17" cy="19" r="2" />
+  <path d="M17 17h-11v-14h-2" />
+  <path d="M6 5l14 1l-1 7h-13" />
+</svg></h2> 
+
+            <br>
+			<div class="group">
+        <p><strong>Número de Tarjeta</strong></p>
+				<label for="cardNumber">Ingrese los 16 dígitos de su tarjeta</label>
+				<input type="text" id="cardNumber" maxlength="16" minlength="16" placeholder="#### #### #### 9101" required="pattern=[0-9]+">
+			</div>
+      <p><strong>Titular</strong></p>
+			<div class="group">
+				<label for="inputName">Ingrese su nombre completo</label>
+				<input type="text" id="inputName" maxlength="40" placeholder="OMAR SANCHEZ">
+			</div>
+      <p><strong>Fecha de expiración</strong></p>
+			<div class="flexbox">
+				<div class="expiration">
+					<label for="selectMonth">Ingrese la fecha de vencimiento</label>
+					<div class="flexbox">
+						<div class="date">
+							<select name="month" id="month">
+								<option disabled selected>Mes</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+							</select>
+						</div>
+						<div class="date">
+							<select name="year" id="year">
+								<option disabled selected>Año</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+							</select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p><strong>CCV Number</strong></p>
+            <div class="grupo ccv">
+              <label for="CCV">CCV</label>
+              <input type="text" id="CCV" maxlength="3" placeholder="123">
+              <div class="button">
+              <button type="submit" class="buttonSend" id="buttonSend">Enviar</button>
+            </div>
+            <h6 id= "results" class="results"></h6>
+          </div>	
+            </div>
+         </div>
+      </div>
+    </div>
+  </div>
+		</form>
+    <div id="imageCard">
+      <img src="https://i.ibb.co/xzZ62yN/Captura-de-Pantalla-2022-07-18-a-la-s-17-14-51.png"  width="100%" height="">
+    </div>
+
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
